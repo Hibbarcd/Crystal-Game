@@ -1,0 +1,51 @@
+.top-banner {
+    position: relative;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    z-index: 2;
+    font-size: 20pt;
+    color: yellow;
+    text-shadow: 2px 2px black;
+    padding: 10px;
+}
+.image {
+    width: 100px;
+    height: 120px;
+    display: inline-block;
+    padding: 30px;
+    border: 10px ridge green;
+}
+.number-field {
+    position: relative;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+    color: blue;
+    text-shadow: 2px 2px black;
+    bottom: 200px;
+}
+.output-number {
+    color: red;
+}
+.buttons {
+    position: relative;
+    top: 350px;
+    text-align: center;
+}
+@media screen and (max-width: 720px) {
+    .number-field { 
+        bottom: 350px;
+        text-shadow: 2px 2px blueviolet;
+        color: blue;
+    }
+}
+@media screen and (max-width: 640px) {
+    .number-field {
+        position: relative;
+        bottom: 340px;
+        text-shadow: 2px 2px blueviolet;
+        color: blue;
+    }
+
+}
