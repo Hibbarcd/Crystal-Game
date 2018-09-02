@@ -7,8 +7,8 @@ $(document).ready(function() {
     var num1, num2, num3, num4 = Math.floor(Math.random()*(12-1)+1);
     
     var userTotal= 0;
-    var wins = 0;
-    var losses = 0;
+    var wins = "Wins " + 0;
+    var losses ="Losses " + 0;
     
     $("#numberWins").text(wins);
     $("#numberLosses").text(losses);

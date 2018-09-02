@@ -1,7 +1,8 @@
 .top-banner {
-    position: relative;
+    position: static;
     text-align: center;
     height: 40px;
+    padding-bottom: 20px;
     width: 100%;
     z-index: 2;
     font-size: 20pt;
@@ -21,12 +22,20 @@
     text-align: center;
     font-size: 25pt;
     font-weight: bold;
-    color: blue;
-    text-shadow: 2px 2px black;
+    color: #f4f1f1;
+    text-shadow: 2px 2px #101917;
     bottom: 200px;
 }
+#numberWins, #numberLosses{
+    font-size:1.5em;
+}
+
 .output-number {
-    color: red;
+    color: #00ffc7;
+}
+p {
+    color: white;
+    text-shadow: 2px 2px black;
 }
 .buttons {
     position: relative;
@@ -36,16 +45,22 @@
 @media screen and (max-width: 720px) {
     .number-field { 
         bottom: 350px;
-        text-shadow: 2px 2px blueviolet;
-        color: blue;
+        text-shadow: 2px 2px #101917;
+        color: #e0f3ef;
     }
 }
-@media screen and (max-width: 640px) {
-    .number-field {
+@media screen and (max-width: 630px) {
+    .image {
         position: relative;
-        bottom: 340px;
-        text-shadow: 2px 2px blueviolet;
-        color: blue;
+        bottom: 10%;
+        width: 60px;
+        height: 80px;
+        display: inline-block;
+        padding: 30px;
+        border: 6px ridge green;
     }
-
+    .buttons {
+        position: relative;
+        top: 400px;
+    }
 }
