@@ -3,12 +3,10 @@ $(document).ready(function() {
 
     var random = Math.floor(Math.random()*(120-19)+19);
     $("#numberToGet").text(random);
-    
-    var num1, num2, num3, num4 = Math.floor(Math.random()*(12-1)+1);
-    
+        
     var userTotal= 0;
-    var wins = "Wins " + 0;
-    var losses ="Losses " + 0;
+    var wins =  0;
+    var losses = 0;
     
     $("#numberWins").text(wins);
     $("#numberLosses").text(losses);
@@ -17,12 +15,10 @@ $(document).ready(function() {
         random = Math.floor(Math.random()*(120-19)+19);
         console.log(random);
         $("#numberToGet").text(random);
-        var num1, num2, num3, num4 = Math.floor(Math.random()*(12-1)+1);
 
         userTotal = 0;
         $("#score").text(userTotal);
-       
-    } 
+       } 
     function winner() {
         alert("You Won!!");
         wins++;
@@ -41,7 +37,6 @@ $(document).ready(function() {
         crystalValues.push( Math.floor(Math.random()*(12-1)+1));
 
     }
-
     function getCrystalHandler(crystalKey) {
        return function() {
         userTotal = userTotal + crystalValues[crystalKey];
@@ -51,10 +46,12 @@ $(document).ready(function() {
     
         if (userTotal === random) {
             winner()
+            console.log(winner);
         }
     
         else if (userTotal > random) {
             loser()
+            console.log(loser);
         } 
     }
     }
