@@ -10,9 +10,8 @@
     <script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 
 </head>
-
 <body background="background.jpg">
-    <div class="top-banner">Click the crystals,and  match the generated total</div>
+    <div class="top-banner">Click the crystals to match the random total</div>
         <div class="buttons">       
                 <img class="image" id="image1" src="assets/images/bluecrystal.png">
                 <img class="image" id="image2" src="assets/images/redcrystal.png">
@@ -22,17 +21,16 @@
            
             <div class="number-field">
                     <div class="output-number">
+                            <p>This is your target number</p>
                         <div  class="target" id="numberToGet" value="target"></div><br>
-                        <p>This is your target number</p>
                         <p>This is your number so far</p>
-                       <div class="userTotal" id="score"></div>    
+                       <div class="userTotal" id="score">0</div>    
                     </div>
                     <div class="input-number">
                         <div class="user" id="user" value="user"></div>  
                     </div>
                     <p>Wins</p>
                     <div class="wins" id="numberWins"></div>
-                    <br>
                     <p>Losses</p>
                     <div class="losses" id="numberLosses"></div>
                 </div>

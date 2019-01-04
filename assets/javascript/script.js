@@ -12,8 +12,9 @@ $(document).ready(function() {
     $("#numberLosses").text(losses);
     
     function reset() {
+    // Generate random number value for target number
         random = Math.floor(Math.random()*(120-19)+19);
-        console.log(random);
+        // console.log(random);
         $("#numberToGet").text(random);
 
         userTotal = 0;
@@ -31,6 +32,7 @@ $(document).ready(function() {
         $("#numberLosses").text(losses);
         reset();
     }
+//Create array of values for crystals 
     var crystalValues = [];
  
     for (i = 0; i < 4; i++) { 
