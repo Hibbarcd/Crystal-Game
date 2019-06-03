@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 
 .top-banner {
     position: static;
@@ -109,4 +110,82 @@ p {
     .buttons {
         position: relative;
     }
+=======
+
+.top-banner {
+    position: static;
+    text-align: center;
+    height: 40px;
+    padding-bottom: 40px;
+    width: 70vw;
+    font-size: 24pt;
+    font-weight: bold;
+    color: yellow;
+    padding: 10%;
+}
+.image {
+    width: 100px;
+    height: 120px;
+    display: inline-block;
+    padding: 30px;
+    border-radius: 10px;
+    border: 10px ridge green;
+}
+.image:hover {
+    animation: pulse 1s infinite;
+	transition: .4s;
+  
+}
+@keyframes pulse {
+	0% {
+	  transform: scale(1);
+	}
+	90% {
+	  transform: scale(.9);
+	}
+	  100% {
+          border: 3px solid rgb(8, 255, 8);
+          border-radius: 15px;
+	  transform: scale(1);
+	}
+	}
+.number-field {
+    position: relative;
+    text-align: center;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #f4f1f1;
+    text-shadow: 2px 2px #101917;
+    margin: auto;
+}
+#numberWins, #numberLosses{
+    font-size:1.5em;
+    text-decoration: underline;
+    color: red;
+}
+.output-number {
+    color: #26ff00;
+}
+p {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.buttons {
+    position: relative;
+    text-align: center;
+}
+@media screen and (max-width: 650px) {
+    .image {
+        position: relative;
+        bottom: 10%;
+        width: 40px;
+        height: 60px;
+        display: inline-block;
+        padding: 20px;
+        border: 5px ridge green;
+    }
+    .buttons {
+        position: relative;
+    }
+>>>>>>> bf116ee3552def30fff86504432731559e945b5b
 }

@@ -1,0 +1,50 @@
+.top-banner {
+    position: relative;
+    text-align: center;
+    height: 40px;
+    width: 100%;
+    z-index: 2;
+    font-size: 20pt;
+    color: yellow;
+    text-shadow: 2px 2px black;
+    padding: 10px;
+}
+.image {
+    width: 100px;
+    height: 120px;
+    display: inline-block;
+    padding: 30px;
+    border: 10px ridge green;
+}
+.number-field {
+    position: relative;
+    text-align: center;
+    font-size: 25pt;
+    font-weight: bold;
+    color: #f4f1f1;
+    text-shadow: 2px 2px #101917;
+    bottom: 200px;
+}
+#numberWins, #numberLosses{
+    font-size:1.5em;
+}
+
+.output-number {
+    color: #00ffc7;
+}
+p {
+    color: white;
+    text-shadow: 2px 2px black;
+}
+.buttons {
+    position: relative;
+    top: 350px;
+    text-align: center;
+}
+@media screen and (max-width: 720px) {
+    .number-field { 
+        bottom: 350px;
+        text-shadow: 2px 2px #101917;
+        color: #e0f3ef;
+    }
+}
