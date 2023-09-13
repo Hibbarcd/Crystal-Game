@@ -20,7 +20,7 @@
     border: 10px ridge green;
 }
 .image:hover {
-    animation: pulse 1s infinite;
+    animation: pulse 2s infinite;
 	transition: .5s;
   
 }
@@ -28,6 +28,9 @@
 	0% {
 	  transform: scale(1);
 	}
+    50% {
+        transform: scale(.98);
+    }
 	95% {
 	  transform: scale(.95);
 	}
